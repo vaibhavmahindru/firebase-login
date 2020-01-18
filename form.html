@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  
+<title>Firebase Login</title>
+ 
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<head>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
+  </head>
+
+</head>
+
+<body>
+
+<form method="POST" action="/signup">
+<div id="login_div" class="main-div">
+    
+<h3>Firebase Web login Example</h3>
+   
+<input type="email" placeholder="Email" id="email_field"  name="email"/>
+    
+<input type="password" placeholder="Password" id="password_field" name="password"/>
+
+    
+<button type="submit">SIGN UP</button>
+</div>
+</form>
+<form method="GET" action="/login">
+  <div id="user_div" class="loggin-div">
+    
+    <h3>Enter credentials to login</h3>
+    <input type="email" placeholder="Email" id="email_field1"  name="email"/>
+    <input type="password" placeholder="Password" id="password_field1" name="password"/>
+    <button type="submit">LOGIN</button>
+    
+    
+  </div>
+</form>
+<script src="index.js"></script>
+
+
+
+</body>
+
+</html>
